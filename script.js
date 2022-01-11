@@ -12,7 +12,6 @@ tens = 0;
 seconds= 0;
 minutes = 0;
 
-
 start.addEventListener('click', function() {
     pause.classList.remove('clicked');
     start.classList.add('clicked');
@@ -55,7 +54,6 @@ function startTimer () {
         seconds++;
     }
 
-
     if (seconds <10) {
         spanSeconds.innerHTML = "0" + seconds;
     }
@@ -64,13 +62,10 @@ function startTimer () {
         spanSeconds.innerHTML = seconds;
     }
     
-
     if (seconds > 59) {
         seconds = 0;
         minutes++;
     }
-
-
 
     if (minutes <10) {
         spanMinutes.innerHTML = "0" + minutes;
